@@ -1,0 +1,894 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Bhugan Infracon Pvt. Ltd.</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Arcade - Architecture Template">
+	<meta name="keywords" content="arcade, architecture, onepage, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="{% static 'img/favicon.png' %}" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="{% static 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' %}" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+	
+	<style>
+	/* Three columns side by side */
+.column {
+	float: center;
+	width: 50%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+	position: absolute;
+	top: 0%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+	
+  }
+}
+
+ /*Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+/*{% comment %} .button {*/
+/*  border: none;*/
+/*  outline: 0;*/
+/*  display: inline-block;*/
+/*  padding: 8px;*/
+/*  color: white;*/
+/*  background-color: #000;*/
+/*  text-align: center;*/
+/*  cursor: pointer;*/
+/*  width: 100%;*/
+/*} */
+
+/*.button:hover {*/
+/*  background-color: #555;*/
+/*} {% endcomment %}*/
+				/* The Modal (background) */
+		.modal {
+		  display: none; /* Hidden by default */
+		  position: fixed; /* Stay in place */
+		  z-index: 1; /* Sit on top */
+		  left: 0;
+		  top: 0;
+		  width: 100%; /* Full width */
+		  height: 100%; /* Full height */
+		  overflow: auto; /* Enable scroll if needed */
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+
+		/* Modal Content/Box */
+		.modal-content {
+		  background-color: #fefefe;
+		  margin: 3% auto; /* 15% from the top and centered */
+		  padding: 10px;
+		  border: 1px solid #888;
+		  width: 80%; /* Could be more or less, depending on screen size */
+		}
+
+		/* The Close Button */
+		.close {
+		  	float: right;
+			color: #aaa;
+			padding-right: 10px;
+			margin: 0;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+		  color: black;
+		  text-decoration: none;
+		  cursor: pointer;
+		 
+		}
+
+
+		{% comment %} second pop up {% endcomment %}
+.column1,
+.column2,
+.column3 {
+	float: center;
+	width: 50%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+	position: absolute;
+	top: 0%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+    display: block;
+	
+  }
+}
+
+{% comment %} /* Add some shadows to create a card effect */
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+} {% endcomment %}
+
+/* Some left and right padding inside the container */
+.container1,
+.container2,
+.container3 {
+  padding: 0 16px;
+  
+}
+
+/* Clear floats */
+.container1::after, .row1::after,
+.container2::after, .row2::after,
+.container3::after, .row3::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+.title1,
+.title2,
+.title3 {
+  color: grey;
+}
+
+{% comment %} .button1 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button1:hover {
+  background-color: #555;
+} {% endcomment %}
+				/* The Modal (background) */
+		.modal1 {
+		  display: none; /* Hidden by default */
+		  position: fixed; /* Stay in place */
+		  z-index: 1; /* Sit on top */
+		  left: 0;
+		  top: 0;
+		  width: 100%; /* Full width */
+		  height: 100%; /* Full height */
+		  overflow: auto; /* Enable scroll if needed */
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+		
+		.modal2 {
+		  display: none; /* Hidden by default */
+		  position: fixed; /* Stay in place */
+		  z-index: 1; /* Sit on top */
+		  left: 0;
+		  top: 0;
+		  width: 100%; /* Full width */
+		  height: 100%; /* Full height */
+		  overflow: auto; /* Enable scroll if needed */
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		  
+		}
+
+		.modal3 {
+		  display: none; /* Hidden by default */
+		  position: fixed; /* Stay in place */
+		  z-index: 1; /* Sit on top */
+		  left: 0;
+		  top: 0;
+		  width: 100%; /* Full width */
+		  height: 100%; /* Full height */
+		  overflow: auto; /* Enable scroll if needed */
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+
+
+		/* Modal Content/Box */
+		.modal-content1		{
+		  background-color: #fefefe;
+		  margin: 3% auto; /* 15% from the top and centered */
+		  padding: 10px;
+		  border: 1px solid #888;
+		  width: 80%; /* Could be more or less, depending on screen size */
+		}
+		.modal-content2   {
+		  background-color: #fefefe;
+		  margin: 2% auto; /* 15% from the top and centered */
+		  padding: 10px;
+		  border: 1px solid #888;
+		  width: 80%; /* Could be more or less, depending on screen size */
+		}
+		.modal-content3 {
+		  background-color: #fefefe;
+		  margin: 3% auto; /* 15% from the top and centered */
+		  padding: 10px;
+		  border: 1px solid #888;
+		  width: 80%; /* Could be more or less, depending on screen size */
+		}
+
+		/* The Close Button */
+		.close1,
+		.close2,
+		.close3 {
+			float: right;
+			color: #aaa;
+			
+			padding-right: 10px;
+			margin: 0;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.close1:hover,
+		.close1:focus,
+		.close2:hover,
+		.close2:focus,
+		.close3:hover,
+		.close3:focus {
+		  color: black;
+		  text-decoration: none;
+		  cursor: pointer;
+		 
+		}
+		{% comment %} background image {% endcomment %}
+	.footer-section{
+		
+      position: relative;
+	  width: 100%;
+      background-image: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url({% static 'img/background/footer.jpg' %} );
+ 	
+      background-size: 100% 100%;
+      background-attachment: fixed;
+	  color:#fff;
+	}
+
+	.text-background{
+      position: relative;
+	  width: 100%;
+      background-image: linear-gradient(
+                     rgba(20,20,20, .7), 
+                     rgba(20,20,20, .7)),
+                     url({% static 'img/background/c-dustin-91AQt9p4Mo8-unsplash.jpg' %} );
+ 	
+      background-size: 100% 100%;
+      background-attachment: fixed;
+	  color:#fff;
+	  }
+
+	</style>
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+
+
+
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+	
+	<!-- Header section start -->   
+	<header class="header-area">
+		<a href="/" class="logo-area" style = "background-color: rgba(0, 0, 0, 0.6);">
+			<img src="{% static 'img/logo.png' %}" alt="logo" width='270'>
+		</a>
+		<div class="nav-switch">
+			<i class="fa fa-bars"></i>
+		</div>
+		<div class="phone-number">+91 9099998199</div>
+		<nav class="nav-menu">
+			<ul>
+				<li><a href='/'>Home</a></li>
+				<li class="active"><a href="">About us</a></li>
+				<!-- Basic dropdown -->
+				<style>
+				.dropbtn {
+				background-color: transparent;
+				color: white;
+				padding-top: 16px;
+				padding-right: 30px;
+				border: none;
+				text-transform: uppercase;
+			    position: relative;
+				}
+				
+				.dropdown {
+				position: relative;
+				display: inline-block;
+				}
+
+				.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #121212;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index: 1;
+				}
+
+				.dropdown-content a {
+				color: white;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				}
+
+				{% comment %} .dropdown-content a:hover {background-color: #BAFF00;} {% endcomment %}
+
+				.dropdown:hover .dropdown-content {display: block;}
+
+				.dropdown:hover .dropbtn {background-color: transparent;}
+
+				@media only screen and (max-width: 767px)
+				.dropbtn {
+					display: block;
+					
+					padding: 16px 21px;
+					border-bottom: 1px solid #202020;
+					margin-right: 0;
+					width: 100%;
+				}
+				@media only screen and (max-width: 767px)
+				.dropdown {
+					position: relative;
+					display: line-block;
+				}
+				#contentde {display: block;}
+				#contentmo {display: none;}
+
+				@media screen and (max-width: 768px) {
+
+				#contentde {display: none;}
+				#contentmo {display: block;
+							overflow: Hidden;
+				}
+				
+				@media screen and (max-width: 768px) {
+					.dropdown-content{
+						margin-left: 80px;
+					}
+					.dropbtn{
+						margin-left: 20px;
+					}
+				}
+				</style>
+				<li >
+					<div class="dropdown">
+						<button class="dropbtn" style="color: #fff;"> Group</button>
+						<div id="contentmo">
+						_________________________________________________
+						</div>
+						<div class="dropdown-content" >
+							<a href="https://bhuganinfracon.com/">Bhugan Infracon</a>
+							<a href="#">Bhugan Life Science</a>
+							
+						</div>
+					</div>
+				</li>
+				
+				<li><a href="/services/">Services</a></li>
+				<li><a href= '/projects/'>Projects</a></li>
+				<li><a href="/career/">Career</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Header section end -->   
+
+
+	<!-- Page header section start -->
+	<section class="page-header-section set-bg" data-setbg="{% static 'img/header-bg.jpg' %}">
+		<div class="container">
+			<h1 class="header-title">About us<span>.</span></h1>
+		</div>
+	</section>
+	<!-- Page header section end -->
+
+
+	<!-- Intro section start -->
+	<section class="intro-section spad, text-background">
+		<div class="promo-box set-bg" data-setbg="{% static 'img/h3.jpg' %}">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 promo-text" id="Special-Message">
+							<h1> <span>Special Message from the Managing Director</span> </h1>
+							
+						</div>
+						
+					</div>
+				</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 intro-text">
+					<br>
+					<div class="row">
+					{% comment %} class="col-md-6" {% endcomment %}
+						<div>
+							<p style= 'color: #fff;  font-size: 17px;'>We started on this journey of Bhugan Infracon Private Limited in 1996 with a small team and a big dream – ‘Be recognized as the most reliable engineering and Infrastructure Company in India’. In our 24 year journey, there have been tremendous highs and lows, extreme challenges and great learnings. But all the while, the dream has persisted.</p>
+						
+							<p style= 'color: #fff;  font-size: 17px;'>Over the past couple of years, Bhugan Infracon Private Limited has seen a huge growth and transformation unlike any since our inception. Our verticals have grown, we have been awarded bigger and better projects, our geographical span has expanded and our teams have grown manifold. We have evolved from a small local construction set up, to a recognized and respected infrastructure construction and development company in India.</p>
+						
+							<p style= 'color: #fff;  font-size: 17px;'>Our journey has been made possible because of the blessing and good wishes of all our employees, their families and our various stakeholders. We will continue to evolve, transform and grow and while we do, we hope to have your continued support and good wishes. </p>
+						</div>
+						
+					</div>
+					<div class = 'section-title' >
+							<center><span style="background-color: #d0e3b2; color: black;"><b><h3 style="background-color: #d0e3b2; font-size: 23px;">➤ Ganeshbhai N. Patel</h3></b></span></center>
+					</div>
+				</div>
+				<div class="col-lg-4 pt-4">
+					<img src="{% static 'img/about.jpg' %}" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Intro section end -->
+
+
+	<!-- Testimonials section start -->
+	<section class="testimonials-section spad">
+		<div class="testimonials-image-box"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 pl-lg-0 offset-lg-5 cta-content" id="Achievements">
+					<h1> <span>Achievements</span></h1>
+					<div class="qut">“</div>
+					<div class="testimonials-slider" id="test-slider" >
+						<div class="ts-item">
+							<p style="font-size: 18px;">	➤	Started with an initial investment of just Rupees 5 lac and working as Subcontractor for various Govt. Approved contractor and we are now a highly established company with an annual turnover of about 133.89 cores in 2016-17. <br><br>
+								<span style="background-color: #d0e3b2; color: black; font-size: 18px;"><b>➤	We have “AA” class registration; the highest category awarded to carryout construction activities.</b></span> <br><br>
+								➤	Completed more than 35 project overall Gujarat for the welfare of people living in Gujarat.<br><br>
+								<span style="background-color: #d0e3b2; color: black; font-size: 18px;"><b>➤	Executed one of the projects as subcontractor for Repair and Re Construction of health care building of Patan District funded and monitored by European Commission. Project Cost of Rs 8crore was completed in within 12 month and way ahead of time limit in FY 2002-03.</b></span><br><br>
+								➤	Executed a project of Construction of Vermi compost Plant Project at Gujarat Urban Development Company Gandhinagar.  15 Plant out of 30 were constructed and were ready for use with 6 months, from the date of start, Whole project was completed within 10 month of time limit.<br><br>
+							</p>
+							{% comment %} <h4>Ganeshbhai N. Patel</h4>
+							<span>MD</span> {% endcomment %}
+						</div>
+						<div class="ts-item">
+							<p style="font-size: 18px;">	➤	Executed a project of repair and reconstruction of primary School for Taluka Radhanpur and Santalpur Dist: Patan for Client District Primary Education Program Gandhinagar in FY-2001-02.<br><br>
+								<span style="background-color: #d0e3b2; color: black; font-size: 18px;"><b>➤	Executed bridge project connecting prantij and mahudi village on Sabarmati River near lodhra for client Executive Engineer R & B Division Mehsana.</b></span><br><br>
+								➤	Executed a project, Construction of Landfill at Palanpur town District Banaskantha for Gujarat Urban Development Company Limited Gandhinagar, Total project cost was about 15 crore and was complete within its time limit.<br><br>
+								<span style="background-color: #d0e3b2; color: black; font-size: 18px;"><b>➤	Executed a Construction of Commercial Building “Shangri-La Arcade in Ahmedabad for Shoppers Developers Ahmedabad. Total Project cost was 1139 Lac, s and was completed with outstanding Finishing as per Architectural layout.</b></span><br><br>
+							</p>
+							{% comment %} <h4>Ganeshbhai N. Patel</h4>
+							<span>MD</span> {% endcomment %}
+						</div>
+						<div class="ts-item">
+							<p  style="font-size: 18px;">	➤	Executed Augmentation of Water Supply scheme at Santrampur under for Gujarat urban Development Company limited Gandhinagar with total project cost around 14.50 Cr.<br><br>
+								<span style="background-color: #d0e3b2; color: black; font-size: 18px;"><b>➤	Executed underground drainage project and network scheme under district development officer for Amirgarh, Varahi wav, and satlasana. Overall total project cost around 30 Cr.</b></span><br><br>
+								➤	Executed construction of underground sump and installation of electro mechanical machinery at bhomiya for Godhra nagarpalika total project cost around 2.50 Cr.<br><br>
+								<span style="background-color: #d0e3b2; color: black; font-size: 18px;"><b>➤	Executed Construction of Underground drainage project at Khedbharama with total project cost of 42.34 Cr.</b></span><br><br>
+								➤	At Bhugan Engineers we are always on the lookout of challenging works and our motto is timely completion, yet without any compromise in quality and to the satisfaction of clients.<br><br>
+							</p>
+							{% comment %} <h4>Ganeshbhai N. Patel</h4>
+							<span>MD</span> {% endcomment %}
+						</div>
+					</div>
+					<div class="qut">”</div>
+					<div class="slide-num-holder test-slider" id="snh-2"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Team section start -->
+	<section class="team-section spad">
+		<div class="container">
+			<div class="section-title mb100" Id="team" >
+				<center ><span class="font-weight-bold text-uppercase mt-3 mb-4" style="display: block; "><b><h1 style="font-size: 40px;">Our Professional Team</h1></b></span></center>
+			</div>
+			<div class="section-title "  style='margin-bottom: 60px;'  Id="MD">
+				
+				<h3 style="background-color: #d0e3b2; font-size: 30px;">Managing Director</h3>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6" style = 'cursor: pointer;'>
+					<div id="myBtn" class="team-member">
+						<img src="{% static 'img/team/1.jpg' %}" alt="">
+						<div class="member-info">
+							<h2>Ganeshbhai N. Patel</h2>
+							<p>Chairman & MD </p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="myModal" class="modal">
+
+					<!-- Modal content -->
+<!--					  <div class="modal-content">-->
+<!--						<span class="close">&times;</span>-->
+<!--						<p>Some text in the Modal..</p>-->
+<!--					  </div>-->
+					<class="row">
+
+						<div class="column">
+							<div class="card" style="height: 0px;">
+								<div class="modal-content1">
+									<span class="close" style="float: right;">&times;</span>
+									<center style="padding-top: 15px;"><img class='col-lg-4 col-md-6' src="{% static 'img/team/1.jpg' %}" alt="Jane" ></center>
+									<div class="container">
+										<center><h2>Ganeshbhai N. Patel <br>(B.E. Civil - 1983)</h2></center>
+										<center><b><p class="title">Chairman & Managing Director</p></b></center>
+										<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mr. Ganeshbhai N. Patel the Founder and Managing Director of Bhugan Infracon Pvt. Ltd. previously known as Bhugan Engineers is hailed as a strong leader and dauntless entrepreneur. He himself is a Civil Engineer from Saurasatha University. Under his dynamic leadership and visionary approach, Bhugan Infracon Pvt. Ltd. is one of the fastest growing construction conglomerates focused on creating nationally important infrastructure assets driven by commitment. Today, Bhugan Infracon Pvt. Ltd. is the company with interests in Roads, Bridges, Commercial Buildings, Urban Infrastructure, Railways, Water and Sewerage.</p>
+										<center style="padding-bottom= 80px; margin: 0;"><div class="cf-social">
+											
+											<a href="https://in.linkedin.com/company/bhugan-infracon-private-limited"><i class="fa fa-linkedin"></i></a>
+											<a href="https://instagram.com/bhugan_infracon_pvt.ltd?igshid=h2jugoqbm0t6"><i class="fa fa-instagram"></i></a>
+										</div></center>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="section-title mb100">
+			</div>
+			<div class="section-title mb100" >
+				<h3 style="background-color: #d0e3b2; font-size: 30px;">Directors</h3>
+			</div>
+			<div class="row">
+			
+				<div class="col-lg-4 col-md-6" style = 'cursor: pointer;'>
+					<div id="myBtn1" class="team-member">
+						<img src="{% static 'img/team/1.jpg' %}" alt="">
+						<div class="member-info">
+							<h2>Narendrabhai N. Patel</h2>
+							<p>Director</p>
+						</div>
+					</div>
+				</div>
+				<div id="myModal1" class="modal1">
+
+					<!-- Modal content -->
+<!--					  <div class="modal-content">-->
+<!--						<span class="close">&times;</span>-->
+<!--						<p>Some text in the Modal..</p>-->
+<!--					  </div>-->
+					<class="row1">
+
+						<div class="column1">
+							<div class="card" style="height: 0px;">
+								<div class="modal-content1">
+									<span class="close1" style="float: right;">&times;</span>
+									<center style="padding-top: 15px;"><img class='col-lg-4 col-md-6' src="{% static 'img/team/1.jpg' %}" alt="Jane" ></center>
+									<div class="container1">
+										<center><h3>Narendrabhai N. Patel</h3>
+										<p class="title1"><b>Director & Senior Engineer</b></p></center>
+										<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Narendrabhai N Patel provides day to day executive leadership to Bhugan Infracon Pvt. Ltd. He is responsible for company's strategic planning, management, organization building and marketing efforts. He is building Bhugan infracon Pvt. Ltd. as an agile and fast-growing firm by introducing a series of innovative and thoughtful initiatives. And he intends to achieve the same without sacrificing the founding vision, entrepreneurial spirit and culture of Bhugan Infracon Pvt. Ltd. His mantra is: "Great organizations are about characters and values, not techniques". He Hold Civil Engineering Degree from Gujarat University and has over 15 year of Experience.</p>
+										<center style="padding-bottom= 80px; margin: 0;"><div class="cf-social">
+											
+											<a href="https://in.linkedin.com/company/bhugan-infracon-private-limited"><i class="fa fa-linkedin"></i></a>
+											<a href="https://instagram.com/bhugan_infracon_pvt.ltd?igshid=h2jugoqbm0t6"><i class="fa fa-instagram"></i></a>
+										</div></center>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6">
+					<div id="myBtn2" class="team-member" style = 'cursor: pointer;'>
+						<img src="{% static 'img/team/3.jpg' %}" alt="">
+						<div class="member-info">
+							<h2>Manish G. Patel</h2>
+							<p>Director</p>
+						</div>
+					</div>
+				</div>
+				<div id="myModal2" class="modal2">
+
+					<!-- Modal content -->
+<!--					  <div class="modal-content">-->
+<!--						<span class="close">&times;</span>-->
+<!--						<p>Some text in the Modal..</p>-->
+<!--					  </div>-->
+					<class="row2">
+
+						<div class="column2">
+							<div class="card" style="height: 0px;">
+								<div class="modal-content2">
+									<span class="close2" style="float: right;">&times;</span>
+									<center style="padding-top: 15px;"><img class='col-lg-4 col-md-6' src="{% static 'img/team/3.jpg' %}" alt="Jane" ></center>
+									<div class="container2">
+										<center><h2>Manish G. Patel</h2>
+										<p class="title2"><b>Director & Senior Engineer and safety Supervisor (Infrastructure development)</b></p></center>
+										<p style= "font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manish Patel provide day to day service to Bhugan Infracon Pvt. Ltd. His role is to execute various project, provide and maintain quality of project, satisfy all requirement of client. His Oversea Experience provides company strong support by implementing new idea to make project safer and progressively to achieve before time frame set by client. He intends to achieve target without scarifying the founding vision Entrepreneurial Spirit and culture of Bhugan Infracon Pvt. Ltd. His Mantra is “Achieve Success considering safety of progressive team and company’s image. He Hold Civil Engineering Degree from Royal Melbourne university of Technology, Melbourne, Australia and has over 5 year of Experience of Mining and infrastructure.</p>
+										<center style="padding-bottom= 80px; margin: 0;"><div class="cf-social">
+											
+											<a href="https://in.linkedin.com/company/bhugan-infracon-private-limited"><i class="fa fa-linkedin"></i></a>
+											<a href="https://instagram.com/bhugan_infracon_pvt.ltd?igshid=h2jugoqbm0t6"><i class="fa fa-instagram"></i></a>
+										</div></center>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6">
+					<div id="myBtn3" class="team-member" style = 'cursor: pointer;'>
+						<img src="{% static 'img/team/3.jpg' %}" alt="">
+						<div class="member-info">
+							<h2>Pranjal G. Patel</h2>
+							<p>Director</p>
+						</div>
+					</div>
+				</div>
+				<div id="myModal3" class="modal3">
+
+					<!-- Modal content -->
+<!--					  <div class="modal-content">-->
+<!--						<span class="close">&times;</span>-->
+<!--						<p>Some text in the Modal..</p>-->
+<!--					  </div>-->
+					<class="row3">
+
+						<div class="column3">
+							<div class="card" style="height: 0px;">
+								<div class="modal-content3">
+									<span class="close3" style="float: right;">&times;</span>
+									<center style="padding-top: 15px;"><img class='col-lg-4 col-md-6' src="{% static 'img/team/3.jpg' %}" alt="Jane" ></center>
+									<div class="container3">
+										<center><h2>Pranjal G. Patel</h2>
+										<p class="title3"><b>Director & Construction Engineer and site Management</b></p></center>
+										<p style= "font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pranjal Patel provides day to day service to Bhugan Infracon Pvt. Ltd. He’s role is to execute various project, provide and maintain quality of project, satisfy all requirement of client. His Oversea Education of site management provides company strong support by implementing new idea to make project safer and progressively to achieve before time frame set by client. He intends to achieve target without scarifying the founding vision Entrepreneurial Spirit and culture of Bhugan Infracon Pvt. Ltd.. His Mantra is “Good team and good Management provide best outcome in any project. He Hold construction Engineering Degree from SVIT University Vasad and International Business Management degree from Anglia Ruskin University from London, and has over 3 year of Experience in construction industry.</p>
+										<center style="padding-bottom= 80px; margin: 0;"><div class="cf-social">
+											
+											<a href="https://in.linkedin.com/company/bhugan-infracon-private-limited"><i class="fa fa-linkedin"></i></a>
+											<a href="https://instagram.com/bhugan_infracon_pvt.ltd?igshid=h2jugoqbm0t6"><i class="fa fa-instagram"></i></a>
+										</div></center>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	
+
+	
+	<!-- Footer section start -->
+	<footer class="footer-section" style='background-color: #d0e3b2;'>
+		<div class="footer-social">
+			<div class="social-links">
+				<a href="https://in.linkedin.com/company/bhugan-infracon-private-limited"><i class="fa fa-linkedin"></i></a>
+				<a href="https://in.pinterest.com/bhuganinfracon/"><i class="fa fa-pinterest"></i></a>
+				
+				<a href="https://instagram.com/bhugan_infracon_pvt.ltd?igshid=h2jugoqbm0t6"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+			</div>
+		</div>
+		<div class="footer-item" >
+	    <!-- Footer Links -->
+			<div class="container text-center text-md-left">
+
+			<!-- Grid row -->
+				<div class="row">
+
+			<!-- Grid column -->
+					<div class="col-md-3 mx-auto">
+
+				<!-- Links -->
+
+						<div class="hover">
+							<span><b><h5 class="font-weight-bold text-uppercase mt-3 mb-4"  style="background-color: #baff00; color: black; margin: 3px; display: inline-block; padding: 0 20px; margin-bottom: 0;"><a href='/'>Home</a></h5></b></span>
+						</div>
+
+							<ul class="list-unstyled">
+								<li>
+									<a href="/#Introduction">Introduction</a>
+								</li>
+								<li>
+									<a href="/#Services">Services</a>
+								</li>
+								<li>
+									<a href="/#Background And History">Background And History</a>
+								</li>
+								<li>
+									<a href="/#Projects">Projects</a>
+								</li>
+							</ul>
+
+					</div>
+			<!-- Grid column -->
+
+					<hr class="clearfix w-100 d-md-none">
+
+			<!-- Grid column -->
+					<div class="col-md-3 mx-auto">
+
+						<!-- Links -->
+						<div class="hover">
+							<span><b><h5 class="font-weight-bold text-uppercase mt-3 mb-4"  style="background-color: #baff00; color: black; margin: 3px; display: inline-block; padding: 0 20px; margin-bottom: 0;"><a href='/projects/'>Projects</a></h5></b></span>
+						</div>
+
+						<ul class="list-unstyled">
+							<li>
+								<a href="/projects/Construction-of-Underground-Drainage-project-for-Bikaner/">Best Project</a>
+							</li>
+							<li>
+								<a href="/projects/Construction-of-Barbed-Wire-fencing-and-Road-for-Gift-Project/">Gift City</a>
+							</li>
+							<li>
+								<a href="/projects/Construction-of-Underground-Drainage/">RUDSICO Rajasthan</a>
+							</li>
+							<li>
+								
+							</li>
+						</ul>
+
+					</div>
+			<!-- Grid column -->
+
+					<hr class="clearfix w-100 d-md-none">
+
+			<!-- Grid column -->
+					<div class="col-md-3 mx-auto">
+
+				<!-- Links -->
+						<div class="hover">
+							<span><b><h5 class="font-weight-bold text-uppercase mt-3 mb-4"  style="background-color: #baff00; color: black; margin: 3px; display: inline-block; padding: 0 20px; margin-bottom: 0;"><a href='/about/'>About Us</a></h5></b></span>
+						</div>
+
+						<ul class="list-unstyled">
+							<li>
+								<a href="/about/#Special-Message">MD's Message</a>
+							</li>
+							<li>
+								<a href="/about/#Achievements">Achievements</a>
+							</li>
+							<li>
+								<a href="/about/#team">Our Team</a>
+							</li>
+							<li>
+								
+							</li>
+						</ul>
+
+					</div>
+			<!-- Grid column -->
+
+					<hr class="clearfix w-100 d-md-none">
+
+			<!-- Grid column -->
+					<div class="col-md-3 mx-auto">
+
+				<!-- Links -->
+						<div class="hover">
+							<span><b><h5 class="font-weight-bold text-uppercase mt-3 mb-4"  style="background-color: #baff00; color: black; margin: 3px; display: inline-block; padding: 0 20px; margin-bottom: 0;"><a href='/contact/'>Contact Us</a></h5></b></span>
+						</div>
+						<ul class="list-unstyled">
+							
+								<ul class="list-unstyled"><li>
+									<img src="{% static 'img/location.png' %}" alt="" width='40'>
+								</ul></li>
+						</ul>
+
+						<ul class="list-unstyled">
+							<li>
+								201, 2nd Floor, Earth Retail, Near Bhadaj-Science city circle, S.P.Ring Road, Ahmedabad, Gujarat 380060, INDIA
+							</li>						
+							<li>
+								
+							</li>
+							<li>
+								+91 8980002538
+							</li>
+						</ul>
+
+					</div>
+			<!-- Grid column -->
+
+				</div>
+			<!-- Grid row -->
+
+			</div>
+		</div>
+		
+		
+	</footer>
+	<!-- Footer section end -->
+	<!-- Footer section end -->
+
+	<div class="row" style = "background-color: #121212; width: 100%; margin: 0px;" >
+		<div class="col-sm-6" style='vertical-align: middle;'>
+			<div class="card" style = "background-color: #121212; float: right; padding-right: 60px; padding-top: 35px;" >
+				<a href="/"><img src='{% static "img/logo 1.png" %}' width='270'></a>
+				{% comment %} <img class="item-content-box item-block image" data-at="image" alt="" src="img/logo.png" data-src="img/logo.png" data-retina-src="img/logo.png" srcset="img/logo.png">  {% endcomment %}
+			</div>
+		</div> 
+		<div class="col-sm-6" style='padding-top: 30px; padding-bottom: 30px; vertical-align: middle; '>
+			<div class="card" style = "background-color: #121212 ">
+				<span class="x_f2074b6c"  style = 'color: #fff'>Copyright © 1996 - 2020 Bhugan Infracon Group Operating Company, Pvt. Ltd. All Rights Reserved.</span><br>
+				<span class="x_f2074b6c"  style = 'color: #fff'>Use of this Site is subject to express terms of use. By using this site, you signify that you agree to be bound by these Universal Terms of Service.</span>
+			</div>
+		</div>
+	</div> 
+
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/jquery.owl-filter.js' %}"></script>
+	<script src="{% static 'js/magnific-popup.min.js' %}"></script>
+	<script src="{% static 'js/circle-progress.min.js' %}"></script>
+	<script src="{% static 'js/popup.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
