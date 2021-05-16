@@ -1,1 +1,1 @@
-# Project1
+# Django project for Construction site.
